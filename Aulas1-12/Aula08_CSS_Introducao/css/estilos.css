@@ -1,0 +1,48 @@
+
+body{ /* Define a cor do texto do corpo da página como aqua e um fundo gradiente com cores variando da esquerda para a direita */
+    color:aqua;
+    background:linear-gradient(to right,rgb(2, 29, 93),rgb(35, 94, 171),rgb(114, 165, 233));    
+}
+
+/* Define a cor do texto do título de nível 2 como vermelho */
+h2{
+    color: red;
+}
+
+/* Define o fundo dos parágrafos como preto e a fonte para uma fonte padrão */
+p{
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Define a cor do link dentro de um parágrafo como verde e remove o sublinhado do link */
+p a{
+    color:green;
+    text-decoration: none; /* Retira o sublinhado do link */
+}
+
+p a:hover{
+    color:red; /* Muda a cor do link quando passar o mouse */
+}
+
+img{
+    width:500px; /* Define a Largura da imagem*/
+    height:300px; /* Define a Altura da imagem*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

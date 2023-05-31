@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <h2>Sugestões para o Colégio</h2> 
+
+    <form action="pag2.html" method="post"> 
+        <!-- action significa que ao submeter os dados serão enviados para a página "pag2.html"  -->
+
+        <!-- Diferença entre post e get:-->
+        <!-- GET = Com o método GET, os dados do formulário são anexados à URL na forma de parâmetros de consulta. Isso significa que os dados são visíveis na barra de endereço do navegador e podem ser armazenados em caches de histórico ou de pesquisa. O método GET é mais adequado para formulários simples que não envolvem dados confidenciais.-->
+        <!-- POST = Com o método POST, os dados do formulário são enviados como uma carga útil do corpo da requisição HTTP. Isso significa que os dados não são visíveis na barra de endereço do navegador e não são armazenados em caches de histórico ou de pesquisa. O método POST é mais adequado para formulários que envolvem dados confidenciais ou grandes quantidades de dados.:-->
+
+        <fieldset>
+
+            <legend>Deixe aqui sua sugestão</legend>
+
+            <p>
+            <label for="idnome"> Nome: </label>
+            <input type="text" id="idnome" size="50"/>
+            </p>
+
+            <p>
+            <label for="idemail"> Email: </label>
+            <input type="text" id="idemail" size="50"/>
+            </p>
+
+            <p>
+            <label for="idfone"> Telefone: </label>
+            <input type="text" id="idfone" size="15" maxlength="15"/>
+            </p>
+
+            
+            <p>
+            <label for="idendereco"> Endereço: </label>
+            <input type="text" id="idendereco" size="60"/>
+            </p>
+
+            <p>
+            <label for="idtata"> Data de Nascimento: </label>
+            <input type="date" id="iddata"/>
+            </p>
+
+
+            <p>
+            <label for="idserie"> Série: </label>
+            <select name="serie" id="idserie" >
+            <option> Selecione </option>
+            <optgroup label="Ensino Fundamental">
+                <option value="6ano"> 6°Ano </option>
+                <option value="7ano"> 7°Ano </option>
+                <option value="8ano"> 8°Ano </option>
+                <option value="9ano"> 9°Ano </option>
+            </optgroup>
+            <optgroup label="Ensino Médio">
+                <option value="1serie"> 1ªSérie </option>
+                <option value="2serie"> 2ªSérie </option>
+                <option value="3serie"> 3ªSérie </option>
+                <option value="magisterio"> Curso de Magistério </option>
+            </optgroup>
+            <optgroup label="Ensino Técnico">
+                <option value="1ADS"> 1ªSérie Desenvolvimento de Sistemas </option>
+                <option value="2ADS"> 2ªSérie Desenvolvimento de Sistemas</option>
+            </optgroup>
+            </select>
+            </p>
+
+            <p>
+            <label for="idgenero"> Gênero: </label>
+            <input type="radio" name="genero" value="masc" id="idmasc"/>
+            <label for="idmasc"> Masculino </label>
+
+            <input type="radio" name="genero" value="fem" id="idfem"/>
+            <label for="idfem"> Feminino </label>
+
+            <input type="radio" name="genero" value="outro" id="idoutro"/>
+            <label for="idoutro"> Outro </label>
+            </p>
+
+           
+            <span>Assunto:</span>
+
+            <table>
+    
+            <tr>
+
+            <td>
+            <input type="checkbox" id="idsala" name="assuntos[]" value="sala" />
+            <label for="idsala"> Salas de Aula </label>
+            </td>
+        
+            <td>
+            <input type="checkbox" id="idcantina" name="assuntos[]" value="cantina" />
+            <label for="idcantina"> Cantina </label>
+            </td>
+    
+            <td>
+            <input type="checkbox" id="idlab" name="assuntos[]" value="lab" />
+            <label for="idlab"> Laboratório </label>
+            </td>
+
+            </tr>
+            
+            <tr>
+
+            <td>
+            <input type="checkbox" id="idquadra" name="assuntos[]" value="quadra" />
+            <label for="idquadra"> Quadra </label>
+            </td>
+
+            <td>
+            <input type="checkbox" id="idcampo" name="assuntos[]" value="campo" />
+            <label for="idcampo"> Campo</label>
+            </td>
+            
+            <td>
+            <input type="checkbox" id="idoutro" name="assuntos[]" value="outro" />
+            <label for="idoutro"> Outro </label>
+            </td>
+
+            </tr>
+
+            </table>
+            
+            <p>
+            <label for="idsugestao">Sugestão: </label> <br>
+            <textarea id="idsugestao" cols="70" rows="5"></textarea>
+            </p>
+
+            <p>
+            <input type="submit" id="idenviar" value="Enviar"/>
+            <input type="reset" id="limpar" value="Limpar" />
+            </p>
+        
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
